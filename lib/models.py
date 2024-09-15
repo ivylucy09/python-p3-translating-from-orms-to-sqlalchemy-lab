@@ -9,5 +9,5 @@ class Dog(Base):
     __tablename__ = 'dogs'
 
     id = Column(Integer(), primary_key=True)
-    name = Column(String())
-    breed = Column(String())
+    name = Column(String, nullable=False)
+    breed = Column(String, nullable=False)
